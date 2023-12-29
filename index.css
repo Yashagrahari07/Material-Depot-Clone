@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
 .main{
     height: 100vh;
     width: 100vw;
@@ -16,7 +20,7 @@
     z-index: 1;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .nav{
@@ -121,7 +125,7 @@
 
 .store{
     height: 102px;
-    width: 155px;
+    width: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -199,4 +203,55 @@
 .options{
     padding-right: 8px;
     padding-left: 50px;
+}
+
+
+.tiles{
+    height: 820px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:180px;
+}
+
+.lg-tiles{
+    padding: 0px 10px;
+}
+
+.lg-tiles img{
+    height: 575px;
+    width: 1200px;
+    border-radius: 0.5rem;
+}
+
+.md-tiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.md-tiles img{
+    height: 282.5px;
+    border-radius: 0.5rem;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    gap: 15px;
+}
+
+.lg{
+    font-size: 40px;
+    font-weight: 550;
+}
+
+.sm{
+    font-size: 20px;
 }
