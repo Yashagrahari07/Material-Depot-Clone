@@ -2,15 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
-
-body {
-    font-family: 'Poppins', sans-serif;
-  }
 
 .main{
     height: 100vh;
-    width: 100vw;
  }
 
 .header{
@@ -205,9 +201,13 @@ body {
     padding-left: 50px;
 }
 
+.main-page{
+    display: flex;
+    flex-direction: column;
+}
 
 .tiles{
-    height: 820px;
+    height: 800px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -215,6 +215,8 @@ body {
 }
 
 .lg-tiles{
+    height: 575px;
+    width: 1220px;
     padding: 0px 10px;
 }
 
@@ -228,6 +230,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 302.5px;
     padding: 0px 10px;
     gap: 10px;
 }
@@ -254,4 +257,116 @@ body {
 
 .sm{
     font-size: 20px;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 25px;
+    gap: 12px;
+    padding-bottom: 30px;
+}
+
+.text{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photos div{
+    flex: 1 0 15%;
+    max-width: 15%;
+    overflow: hidden;
+}
+
+.photo-gallery img {
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+    display: block;
+}
+
+.contact{
+    height: 80px;
+    width: 196px;
+    position: fixed;
+    bottom: 50px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 5px; 
+    border-radius: 0.3rem;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2px;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    padding: 8px;
+}
+
+.buy p{
+    font-size: 22px;
+}
+
+.buy .mobile {
+    font-size: 26px;
+    color: #1c77c3;
+}
+
+.str{
+    height: 136px;
+    width: 68px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-icon{
+    height: 68px;
+    width: 60px;
+    padding: 4px 0px;
+    background-color: #ffdb15;
+    
+}
+
+.store-icon img{
+    height: 50px;
+    width: 50px;
+}
+
+.whats{
+    height: 68px;
+    width: 60px;
+    padding 4px 0px;
+}
+
+.whats img{
+    height: 60px;
+    width: 60px;
 }
